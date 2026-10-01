@@ -482,6 +482,30 @@ nav.nav-links a.active::after {
   font-size: 13px;
 }
 
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .admission-content {
+    padding: 0 30px 70px;
+  }
+
+  .intro-section {
+    gap: 40px;
+    padding: 50px 0;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .requirements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-box {
+    padding: 50px 40px;
+  }
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 900px) {
   .hamburger {
@@ -552,6 +576,58 @@ nav.nav-links a.active::after {
 }
 
 @media (max-width: 480px) {
+  .page-hero {
+    padding: 120px 20px 40px;
+  }
+
+  .admission-content {
+    padding: 0 20px 60px;
+  }
+
+  .intro-section {
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  .intro-text h2,
+  .process-section h2,
+  .requirements-section h2,
+  .cta-box h2 {
+    font-size: 26px;
+  }
+
+  .process-section h2,
+  .requirements-section h2 {
+    margin-bottom: 30px;
+  }
+
+  .step {
+    padding: 26px 18px;
+  }
+
+  .req-card {
+    padding: 26px 22px;
+  }
+
+  .cta-section {
+    padding: 20px 0;
+  }
+
+  .cta-box {
+    padding: 30px 22px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
   .process-steps {
     grid-template-columns: 1fr;
   }

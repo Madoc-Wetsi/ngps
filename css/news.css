@@ -413,11 +413,28 @@ nav.nav-links a.active::after {
 }
 
 @media (max-width: 480px) {
+  .page-hero {
+    padding: 120px 20px 40px;
+  }
+
   .page-hero h1 {
     font-size: 30px;
   }
 
   .news-content {
     padding: 20px 16px 60px;
+  }
+
+  .news-body {
+    padding: 20px;
+  }
+
+  .news-card.featured .news-body h2 {
+    font-size: 20px;
+  }
+
+  .news-meta {
+    flex-wrap: wrap;
+    gap: 8px 14px;
   }
 }

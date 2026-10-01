@@ -280,3 +280,136 @@ main{
   align-items: center;
   justify-content: center;
 }
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1200px) {
+  .short-display{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    min-height: auto;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  body{
+    flex-direction: column;
+  }
+
+  .side-bar{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .head{
+    min-height: 50px;
+    margin-bottom: 0;
+  }
+
+  nav{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 12px;
+  }
+
+  nav a{
+    padding: 10px 14px;
+    border-radius: 6px;
+  }
+
+  .btn{
+    position: static;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  main{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header{
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .left-section{
+    margin-left: auto;
+  }
+
+  .content{
+    padding: 20px 16px;
+  }
+
+  .display-box{
+    width: 150px;
+    height: 120px;
+  }
+
+  .display-box p{
+    font-size: 26px;
+  }
+
+  .latest{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .recent-application,
+  .notification{
+    width: 100%;
+  }
+
+  .quick-action h4{
+    padding: 20px;
+    text-align: center;
+  }
+
+  .actions{
+    height: auto;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header{
+    padding: 12px;
+  }
+
+  .header h2{
+    font-size: 18px;
+  }
+
+  .content{
+    padding: 16px 12px;
+  }
+
+  nav a{
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  .display-box{
+    width: 135px;
+    height: 110px;
+  }
+
+  .display-box p{
+    font-size: 24px;
+  }
+
+  .quick{
+    width: 130px;
+    height: 70px;
+  }
+}
